@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)file:///C:/Users/ELCOT/Untitled-1.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Assignment Submission Tracker</title>
+
+    <link rel="stylesheet" href="file:///C:/Users/ELCOT/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>College Assignment Submission Tracker</h1>
+
+    <div class="form-section">
+
+        <input type="text" id="title" placeholder="Assignment Title">
+
+        <input type="text" id="subject" placeholder="Subject">
+
+        <input type="date" id="dueDate">
+
+        <button onclick="addAssignment()">
+            Add Assignment
+        </button>
+
+    </div>
+
+    <div class="filter-section">
+
+        <label>Filter by Subject:</label>
+
+        <select id="subjectFilter" onchange="displayAssignments()">
+
+            <option value="All">
+                All Subjects
+            </option>
+
+        </select>
+
+    </div>
+
+    <div class="dashboard">
+
+        <div class="card">
+            <h3>Submitted</h3>
+            <p id="submittedCount">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Pending</h3>
+            <p id="pendingCount">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Late</h3>
+            <p id="lateCount">0</p>
+        </div>
+
+    </div>
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>Title</th>
+
+                <th>Subject</th>
+
+                <th>Due Date</th>
+
+                <th>Status</th>
+
+                <th>Action</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="assignmentTable">
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<script src="file:///C:/Users/ELCOT/script.js"></script>
+
+
+</body></html>
